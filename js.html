@@ -78,7 +78,7 @@ textarea2.addEventListener('keydown', (event) => {
             		textarea2.value = "";
             }
 });
-
+}
 	socket.onmessage = function(event) {
 		if(event.data != "Name used") {
     			  textarea2.maxLength = 50000; 
