@@ -2,7 +2,9 @@
 Web page chat box with server software;
 This is Chatter Box,a web page chat box with server software.
 
-js.html is a template web page with a java script user interface. Chatter box uses HTML Textareas so most attributes of the boxes can be        configured with HTML.
+js.html is a template web page client with a java script user interface.
+
+Chatter box uses HTML Textareas so most attributes of the boxes can be configured with HTML.
 
 You will need set the server URL and chatroom name in the page javascript. Both parameters are set in a clearly marked line in the page source.
 
