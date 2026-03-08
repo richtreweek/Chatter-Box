@@ -133,7 +133,6 @@ static int callback_chat(struct lws *wsi, enum lws_callback_reasons reason,
 
 		   unsigned char buff[strlen(strbuf) + strlen(user_id) + 5 ] ;
 		   strcpy(buff,"\n");
-		   strcat(buff," ");
 		   strcat(buff,strbuf);
                    strcat(buff,": ");
                    strcat(buff,user_id);
