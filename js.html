@@ -88,7 +88,6 @@ textarea2.addEventListener('keydown', (event) => {
 	socket.onmessage = function(event) {
 		if(event.data != "Name used") {
     			  textarea2.maxLength = 10000; 
-//	    		  textarea2.value = "";
 			let tv = (textarea1.value + event.data + "\n");
 
 			while(tv.length > 500000){
@@ -99,16 +98,8 @@ textarea2.addEventListener('keydown', (event) => {
 
 			textarea1.value = tv;
 
-
-
-//let text = "Hello [unknown_part] World";
-//let result = text.replace(/\[.*\]/, ""); 
-
-
-
-
 			textarea1.focus();
-textarea1.setSelectionRange(textarea1.value.length, textarea1.value.length);
+			textarea1.setSelectionRange(textarea1.value.length, textarea1.value.length);
 			textarea2.focus();
 
 
