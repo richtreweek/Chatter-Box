@@ -35,7 +35,7 @@ static int callback_chat(struct lws *wsi, enum lws_callback_reasons reason,
             
            char userid_str[32];
             if (lws_get_urlarg_by_name(wsi, "userId", userid_str, sizeof(userid_str)) > 0) {
-	       printf("Client connected with userid: %s\n", userid_str);
+	
 	      } 
 
 	    new_node->chat_room_id_buffer=strdup((const char *)userid_str);	    
@@ -45,8 +45,7 @@ static int callback_chat(struct lws *wsi, enum lws_callback_reasons reason,
 		new_node->u_id = NULL;
                 connection_list_head = new_node;
 		}
-            // Log when a client connection is established
-            printf("Client established connection\n");
+        
             break;
 
         case LWS_CALLBACK_RECEIVE: {
