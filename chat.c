@@ -121,7 +121,6 @@ static int callback_chat(struct lws *wsi, enum lws_callback_reasons reason,
 		    if(current->u_id != NULL){
                        strcpy(strbuf,current->u_id);
 		       strbuf[strlen(strbuf)] = '\0';
-		       printf("strbuf: %s\n",strbuf);
 			break;
 	    		}	
 	    }
